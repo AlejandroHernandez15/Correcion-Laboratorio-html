@@ -1,14 +1,12 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   width: auto;
 }
-
 .barranavegacion {
   display: flex;
   flex-wrap: nowrap;
@@ -20,7 +18,6 @@ body {
   top: 0%;
   border-bottom: solid black 2px;
 }
-
 .textonav {
   display: flex;
   gap: 40px;
@@ -31,7 +28,6 @@ body {
   gap: 20px;
 }
 /* seccion principal */
-
 .productos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -39,11 +35,9 @@ body {
   max-width: 1280px;
   gap: 5px;
 }
-
 .productos img {
   border-radius: 20px;
 }
-
 .info {
   display: flex;
   justify-content: space-between;
@@ -54,11 +48,10 @@ body {
   justify-content: space-around;
   background-color: #212429;
 }
-.footer img {
+.imagen-footer {
   background-color: white;
   padding: 9px;
   border-radius: 20px;
-
   width: 50px;
   height: 50px;
 }
@@ -68,4 +61,28 @@ body {
 .imgfooter {
   display: flex;
   gap: 10px;
+}
+@media (max-width: 920px) {
+  .textonav {
+    display: none;
+  }
+  .imgnav {
+    display: none;
+  }
+
+  .productos {
+    grid-template-columns: 1fr;
+  }
+  .footer {
+    display: grid;
+    margin-right: 80px;
+    margin-left: 80px;
+  }
+  .devolucionesycambios {
+    border-bottom: 1px solid white;
+  }
+  .imgfooter {
+    border-bottom: 1px solid white;
+    padding: 10px;
+  }
 }
